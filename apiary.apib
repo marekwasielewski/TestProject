@@ -26,12 +26,14 @@ The Example API for Dredd API Blueprint testing tool
 
 + Response 200 (application/json; charset=utf-8)
 
-        [{
-            "_id": "52341870ed55224b15ff07ef",
-            "type": "bulldozer",
-            "name": "willy"
-        }]
-
+        {
+            "GetAllMachinesResult":
+            [{
+              "_id": "52341870ed55224b15ff07ef",
+              "type": "bulldozer",
+               "name": "willy"
+            }]
+        }
 # Machine [/machines/{name}]
 + Parameters
   + name (required,`willy`)
