@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using System.ServiceModel.Web;
 using System.Text;
 using test9510API.Models;
 
@@ -15,7 +16,11 @@ namespace test9510API
         public CreateMachineResult CreateMachine(Machine machine)
         {
             if (machine != null && machine.type == "bulldozer")
+            {
+                var context = WebOperationContext.Current;
+                context.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Accepted;
                 return new CreateMachineResult() { message = "Accepted" };
+            }
             else
                 return new CreateMachineResult() { message = "Error" };
 
