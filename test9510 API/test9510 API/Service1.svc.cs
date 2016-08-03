@@ -12,6 +12,15 @@ namespace test9510API
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
+        public CreateMachineResult CreateMachine(Machine machine)
+        {
+            if (machine != null && machine.type == "bulldozer")
+                return new CreateMachineResult() { message = "Accepted" };
+            else
+                return new CreateMachineResult() { message = "Error" };
+
+        }
+
         public test9510API.Models.Machine[] GetAllMachines()
         {
             return new test9510API.Models.Machine[]
