@@ -32,6 +32,6 @@ namespace test9510API
            ResponseFormat = WebMessageFormat.Json,
            BodyStyle = WebMessageBodyStyle.Bare,
            UriTemplate = "machines")]
-        void CreateMachine(test9510API.Models.Machine machine);
+        Models.CreateMachineResult CreateMachine(test9510API.Models.Machine machine);
     }
 }
