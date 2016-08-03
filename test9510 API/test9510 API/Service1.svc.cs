@@ -29,7 +29,7 @@ namespace test9510API
         public void DeleteAMachine(string name)
         {
             var context = WebOperationContext.Current;
-            context.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.OK;
+            context.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.NoContent;
         }
 
         public test9510API.Models.Machine[] GetAllMachines()
