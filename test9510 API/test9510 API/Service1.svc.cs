@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using test9510API.Models;
 
 namespace test9510API
 {
@@ -21,6 +22,18 @@ namespace test9510API
                     }
                 };
 
+        }
+
+        public Machine GetAMachine(string name)
+        {
+            if (name == "willy")
+                return new Machine()
+                {
+                    type = "bulldozer",
+                    name = "willy",
+                    _id = "5229c6e8e4b0bd7dbb07e29c"
+                };
+            else return null;
         }
     }
 }

@@ -18,5 +18,13 @@ namespace test9510API
             BodyStyle = WebMessageBodyStyle.Bare,
             UriTemplate = "machines")]
         test9510API.Models.Machine[] GetAllMachines();
+
+
+        [OperationContract]
+        [WebInvoke(Method = "GET",
+            ResponseFormat = WebMessageFormat.Json,
+            BodyStyle = WebMessageBodyStyle.Bare,
+            UriTemplate = "machines/{name}")]
+        test9510API.Models.Machine GetAMachine(string name);
     }
 }
