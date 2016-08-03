@@ -36,7 +36,6 @@ namespace test9510API
 
         [OperationContract]
         [WebInvoke(Method = "DELETE",
-         ResponseFormat = WebMessageFormat.Json,
          BodyStyle = WebMessageBodyStyle.Bare,
          UriTemplate = "machines/{name}")]
         void DeleteAMachine(string name);
