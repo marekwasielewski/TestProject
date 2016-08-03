@@ -30,6 +30,7 @@ namespace test9510API
         {
             var context = WebOperationContext.Current;
             context.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.NoContent;
+
         }
 
         public test9510API.Models.Machine[] GetAllMachines()
