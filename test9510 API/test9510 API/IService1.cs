@@ -21,17 +21,24 @@ namespace test9510API
 
 
         [OperationContract]
-        [WebInvoke(Method = "GET",
-            ResponseFormat = WebMessageFormat.Json,
-            BodyStyle = WebMessageBodyStyle.Bare,
-            UriTemplate = "machines/{name}")]
-        test9510API.Models.Machine GetAMachine(string name);
-
-        [OperationContract]
         [WebInvoke(Method = "POST",
            ResponseFormat = WebMessageFormat.Json,
            BodyStyle = WebMessageBodyStyle.Bare,
            UriTemplate = "machines")]
         Models.CreateMachineResult CreateMachine(test9510API.Models.Machine machine);
+
+        [OperationContract]
+        [WebInvoke(Method = "GET",
+         ResponseFormat = WebMessageFormat.Json,
+         BodyStyle = WebMessageBodyStyle.Bare,
+         UriTemplate = "machines/{name}")]
+        test9510API.Models.Machine GetAMachine(string name);
+
+        [OperationContract]
+        [WebInvoke(Method = "DELETE",
+         ResponseFormat = WebMessageFormat.Json,
+         BodyStyle = WebMessageBodyStyle.Bare,
+         UriTemplate = "machines/{name}")]
+        void DeleteAMachine(string name);
     }
 }
