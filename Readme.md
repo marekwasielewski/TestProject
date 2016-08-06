@@ -3,6 +3,8 @@
          height="130">
 </p>
 
+<a href='https://coveralls.io/github/marekwasielewski/TestProject?branch=master'><img src='https://coveralls.io/repos/github/marekwasielewski/TestProject/badge.svg?branch=master' alt='Coverage Status' /></a>
+
 Próba instalacji serwera jenkins na Windows 10
 ród³a:
 - http://www.danmusk.com/how-to-build-asp-net-applications-in-teamcity-with-msbuild-tools-2013-and-net-framework-4-5-sdk/
