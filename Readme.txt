@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="http://sit.telemetria.eu:4063/job/TestProject/badge/icon"
+         height="130">
+</p>
 Próba instalacji serwera jenkins na Windows 10
 ród³a:
 - http://www.danmusk.com/how-to-build-asp-net-applications-in-teamcity-with-msbuild-tools-2013-and-net-framework-4-5-sdk/
