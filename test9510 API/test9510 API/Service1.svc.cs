@@ -45,7 +45,7 @@ namespace test9510API
 
         }
 
-        public Machine GetAMachine(string name)
+        //public Machine GetAMachine(string name)
         {
             if (name == "willy")
             {
