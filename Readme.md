@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="http://sit.telemetria.eu:4063/job/TestProject/badge/icon">
+    <img src="http://sit.telemetria.eu:4063/job/ApiTestProject/job/BuildTask/badge/icon">
     <img src="http://sit.telemetria.eu:4062/jenkins/c/http/localhost:8080/job/TestProject">
 </p>
 
