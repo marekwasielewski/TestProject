@@ -2,6 +2,12 @@
     <img src="http://sit.telemetria.eu:4063/job/TestProject/badge/icon"
          height="130">
 </p>
+<p align="center">
+    <img src="http://sit.telemetria.eu:4062/jenkins/c/http/sit.telemetria.eu:4063/job/TestProject"
+         height="130">
+</p>
+
+
 
 
 Próba instalacji serwera jenkins na Windows 10
