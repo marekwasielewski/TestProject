@@ -1,10 +1,7 @@
 <p align="center">
     <img src="http://sit.telemetria.eu:4063/job/TestProject/badge/icon">
-</p>
-<p align="center">
     <img src="http://sit.telemetria.eu:4062/jenkins/c/http/localhost:8080/job/TestProject">
 </p>
-
 
 
 
