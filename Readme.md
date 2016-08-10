@@ -7,7 +7,7 @@
 | | |
 | --- | --- |
 | **Build** | ![Build status](http://sit.telemetria.eu:4063/job/ApiTestProject/job/BuildTask/badge/icon) |
-| **API Tests**  ![Coveralls](http://sit.telemetria.eu:4063/job/ApiTestProject/job/APITest/badge/icon)|
+| **API Tests**|  ![Coveralls](http://sit.telemetria.eu:4063/job/ApiTestProject/job/APITest/badge/icon)|
 
 Próba instalacji serwera jenkins na Windows 10
 Źródła:
