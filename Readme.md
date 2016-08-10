@@ -1,30 +1,28 @@
-<ul>
-    <li><img src="http://sit.telemetria.eu:4063/job/ApiTestProject/job/BuildTask/badge/icon"> - Kompilacja projektu</li>
-    <li><img src="http://sit.telemetria.eu:4063/job/ApiTestProject/job/APITest/badge/icon"> - Test API</li>
-    <li><img src="http://sit.telemetria.eu:4062/jenkins/c/http/localhost:8080/job/ApiTestProject/job/UnitTest"> - Testy jednostkowe</l>
-</ul>
+|Operation|Status|
+| --- | --- |
+| **Build** | ![Build status](http://sit.telemetria.eu:4063/job/ApiTestProject/job/BuildTask/badge/icon) |
+| **API Tests**|  ![Tests](http://sit.telemetria.eu:4063/job/ApiTestProject/job/APITest/badge/icon)|
+| **Unit Tests**|  ![Tests](http://sit.telemetria.eu:4062/jenkins/c/http/127.0.0.1:8080/job/ApiTestProject/job/UnitTest)|
 
-
-
-PrÛba instalacji serwera jenkins na Windows 10
-èrÛd≥a:
+Pr√≥ba instalacji serwera jenkins na Windows 10
+≈πr√≥d≈Ça:
 - http://www.danmusk.com/how-to-build-asp-net-applications-in-teamcity-with-msbuild-tools-2013-and-net-framework-4-5-sdk/
 - http://www.frictionlesscode.com/have-continuous-integration-with-jenkins-in-30-mins/
 -http://blog.couchbase.com/2016/january/continuous-deployment-with-jenkins-and-.net
 1. Projekt 
-	- naleøy stworzyÊ profil zapisany w /Projekt/Properies/PublishProfiles
-	- profil: Site Name: testWeb -  posiada nazwÍ strony, ktÛra bÍdzie uøywana W SERWERZE DOCELOWYM
+	- nale≈ºy stworzyƒá profil zapisany w /Projekt/Properies/PublishProfiles
+	- profil: Site Name: testWeb -  posiada nazwƒô strony, kt√≥ra bƒôdzie u≈ºywana W SERWERZE DOCELOWYM
 	- profil: Package location: /Publish/DeployPackage.zip
-2. Utworzono Virtualnπ maszynÍ na VirtualBox  Windows 10 x64
-3. Instalacja Microsofy Build tools 2015 do instalacji us≥ugi https://www.microsoft.com/en-us/download/details.aspx?id=48159
+2. Utworzono VirtualnƒÖ maszynƒô na VirtualBox  Windows 10 x64
+3. Instalacja Microsofy Build tools 2015 do instalacji us≈Çugi https://www.microsoft.com/en-us/download/details.aspx?id=48159
 4. Instalacj GIT https://git-scm.com/download/win
 5. Instalacja Jenkins 2.7.1 z msi
 	- http://localhost:8080
 	- admin 1234
 	- po instlacji dodano wtyki: MS BUILD, NODEJS , GITHUB, BITBUCKET
 	- jenkins przetrzymuje informacje o zadaniach w C:\Program Files (x86)\Jenkins\workspace
-6. Instalacja SDK, øeby ms build mÛg≥ zbudowaÊ
-	- wyczyta≥em øe 4.0 jest w ramach 4.6 http://stackoverflow.com/questions/35733040/how-to-install-net-4-framework-in-windows-10,ale dalej siÍnie kompuluje 
+6. Instalacja SDK, ≈ºeby ms build m√≥g≈Ç zbudowaƒá
+	- wyczyta≈Çem ≈ºe 4.0 jest w ramach 4.6 http://stackoverflow.com/questions/35733040/how-to-install-net-4-framework-in-windows-10,ale dalej siƒônie kompuluje 
 	- instalacja https://developer.microsoft.com/pl-PL/windows/downloads/windows-10-sdk wybrano 3 pozycje: Windows sdk, msi tools, .net sdk 4.6
 7. Kompilacja projektu wraz z publish package
 	- cmd z uprawnieniami ADMINISTRATORA
@@ -32,10 +30,10 @@ PrÛba instalacji serwera jenkins na Windows 10
 	- utworzy packagae w C:\Publish\
 8. Publikacja aplikacji do IIS
 	- wymagane jest zainstalowany IIS
-	- naleøy stworzyÊ stronÍ IIS o tytule z profilu aplikacji 
+	- nale≈ºy stworzyƒá stronƒô IIS o tytule z profilu aplikacji 
 	- cmd z uprawbnieniami ADMINISTRATORA
-	- wywo≥aÊ komendÍ "C:\Publish\DeployPackage.deploy.cmd" /Y ,ktÛra kopiuje aplikacjÍ w odpowiednie miejsce
-	- strona http://localhost/Service1.svc dzia≥a
+	- wywo≈Çaƒá komendƒô "C:\Publish\DeployPackage.deploy.cmd" /Y ,kt√≥ra kopiuje aplikacjƒô w odpowiednie miejsce
+	- strona http://localhost/Service1.svc dzia≈Ça
 9. Konfiguracja Jenkins
 	- 
 
