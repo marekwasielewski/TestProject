@@ -31,7 +31,7 @@ namespace test9510API
             var context = WebOperationContext.Current;
             if (context != null)
             {
-                //context.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.NoContent;
+                context.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.NoContent;
             }
 
         }
