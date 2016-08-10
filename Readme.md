@@ -7,8 +7,8 @@
 | | |
 | --- | --- |
 | **Build** | ![Build status](http://sit.telemetria.eu:4063/job/ApiTestProject/job/BuildTask/badge/icon) |
-| **API Tests**|  ![Coveralls](http://sit.telemetria.eu:4063/job/ApiTestProject/job/APITest/badge/icon)|
-
+| **API Tests**|  ![Tests](http://sit.telemetria.eu:4063/job/ApiTestProject/job/APITest/badge/icon)|
+| **Unit Tests**|  ![Tests](http://sit.telemetria.eu:4062/jenkins/c/http/localhost:8080/job/ApiTestProject/job/UnitTest)|
 Próba instalacji serwera jenkins na Windows 10
 Źródła:
 - http://www.danmusk.com/how-to-build-asp-net-applications-in-teamcity-with-msbuild-tools-2013-and-net-framework-4-5-sdk/
