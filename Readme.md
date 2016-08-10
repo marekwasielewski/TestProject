@@ -6,7 +6,7 @@
 
 <table>
 <tr>
-    <td>**Build**</td>
+    <td> **Build** </td>
     <td>![Build status](http://sit.telemetria.eu:4063/job/ApiTestProject/job/BuildTask/badge/icon) </td>
 </tr>
 <tr>
