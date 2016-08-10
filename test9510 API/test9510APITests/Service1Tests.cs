@@ -34,12 +34,12 @@ namespace test9510API.Tests
         {
             var service = new Service1();
             var machines = service.GetAllMachines();
-            //if (machines.Count() == 1 
-            //    &&  machines.First().type == "bulldozer" 
-            //    && machines.First().name == "willy" 
-            //    && machines.First()._id == "52341870ed55224b15ff07ef")
-            //    Assert.IsTrue(true);
-            //else
+            if (machines.Count() == 1
+                && machines.First().type == "bulldozer"
+                && machines.First().name == "willy"
+                && machines.First()._id == "52341870ed55224b15ff07ef")
+                Assert.IsTrue(true);
+            else
                 Assert.IsTrue(false);
         }
 
