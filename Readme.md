@@ -4,8 +4,8 @@
     <li><img src="http://sit.telemetria.eu:4062/jenkins/c/http/localhost:8080/job/ApiTestProject/job/UnitTest"> - Testy jednostkowe</l>
 </ul>
 
-
-| --- | --- |
+| | |
+| -a-- | --- |
 | **Build** | ![Build status](http://sit.telemetria.eu:4063/job/ApiTestProject/job/BuildTask/badge/icon) |
 | **API Tests**  ![Coveralls](http://sit.telemetria.eu:4063/job/ApiTestProject/job/APITest/badge/icon)|
 
