@@ -1,7 +1,8 @@
-<p align="center">
-    <img src="http://sit.telemetria.eu:4063/job/ApiTestProject/job/BuildTask/badge/icon">
-    <img src="http://sit.telemetria.eu:4062/jenkins/c/http/localhost:8080/job/TestProject">
-</p>
+<ul>
+    <li>Kompilacja projektu - <img src="http://sit.telemetria.eu:4063/job/ApiTestProject/job/BuildTask/badge/icon"></li>
+    <li>Test API - <img src="http://sit.telemetria.eu:4063/job/ApiTestProject/job/APITest/badge/icon"></li>
+    <li>Testy jednostkowe - <img src="http://sit.telemetria.eu:4062/jenkins/c/http/localhost:8080/job/ApiTestProject/job/UnitTest"></l>
+</ul>
 
 
 
@@ -39,3 +40,4 @@ Próba instalacji serwera jenkins na Windows 10
 	- 
 
 
+                                                       dredd "C:\Program Files (x86)\Jenkins\workspace\ApiTestProject\APITest\apiary.apib" http://localhost/Service1.svc -r apiary -j apiaryApiKey:5189769b0ab564b6be22b509ed6a1121 -j apiaryApiName:test9510
