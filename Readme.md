@@ -1,24 +1,3 @@
-<ul>
-    <li><img src="http://sit.telemetria.eu:4063/job/ApiTestProject/job/BuildTask/badge/icon"> - Kompilacja projektu</li>
-    <li><img src="http://sit.telemetria.eu:4063/job/ApiTestProject/job/APITest/badge/icon"> - Test API</li>
-    <li><img src="http://sit.telemetria.eu:4062/jenkins/c/http/localhost:8080/job/ApiTestProject/job/UnitTest"> - Testy jednostkowe</l>
-</ul>
-
-<table>
-<tr>
-    <td><b>Build</b></td>
-    <td><img src="http://sit.telemetria.eu:4063/job/ApiTestProject/job/BuildTask/badge/icon"> </td>
-</tr>
-<tr>
-    <td><b>API Tests</b></td>
-    <td><img src="http://sit.telemetria.eu:4063/job/ApiTestProject/job/APITest/badge/icon"></td>
-</tr>
-<tr>
-    <td><b>Unit Tests</b></td>
-    <td><img src="http://sit.telemetria.eu:4062/jenkins/c/http/localhost:8080/job/ApiTestProject/job/UnitTest"></td>
-</tr>
-</table>
-
 |Operation|Status|
 | --- | --- |
 | **Build** | ![Build status](http://sit.telemetria.eu:4063/job/ApiTestProject/job/BuildTask/badge/icon) |
