@@ -1,7 +1,7 @@
 <ul>
-    <li>Kompilacja projektu - <img src="http://sit.telemetria.eu:4063/job/ApiTestProject/job/BuildTask/badge/icon"></li>
-    <li>Test API - <img src="http://sit.telemetria.eu:4063/job/ApiTestProject/job/APITest/badge/icon"></li>
-    <li>Testy jednostkowe - <img src="http://sit.telemetria.eu:4062/jenkins/c/http/localhost:8080/job/ApiTestProject/job/UnitTest"></l>
+    <li><img src="http://sit.telemetria.eu:4063/job/ApiTestProject/job/BuildTask/badge/icon"> - Kompilacja projektu</li>
+    <li><img src="http://sit.telemetria.eu:4063/job/ApiTestProject/job/APITest/badge/icon"> - Test API</li>
+    <li><img src="http://sit.telemetria.eu:4062/jenkins/c/http/localhost:8080/job/ApiTestProject/job/UnitTest"> - Testy jednostkowe</l>
 </ul>
 
 
