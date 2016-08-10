@@ -45,7 +45,6 @@ namespace test9510API
                         _id = "52341870ed55224b15ff07ef", type="bulldozer", name="willy"
                     }
                 };
-
         }
 
         public Machine GetAMachine(string name)
