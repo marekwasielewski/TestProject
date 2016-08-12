@@ -1,8 +1,8 @@
 |Operation|Status|
 | --- | --- |
-| **Build** | ![Build status](http://sit.telemetria.eu:4063/job/ApiTestProject/job/BuildTask/badge/icon) |
-| **API Tests**|  ![Tests](http://sit.telemetria.eu:4063/job/ApiTestProject/job/APITest/badge/icon)|
-| **Unit Tests**|  [![Tests](http://sit.telemetria.eu:4062/jenkins/d/http/127.0.0.1:8080/job/ApiTestProject/job/UnitTest)](http://sit.telemetria.eu:4063/job/UnitTest/HTML_Report/)|
+| **Build** | [![Build status](https://img.shields.io/jenkins/s/http/sit.telemetria.eu:4063/BuildTask.svg?maxAge=2592000)](http://sit.telemetria.eu:4063/job/BuildTask/lastBuild/) |
+| **API Tests**|  [![Tests](https://img.shields.io/jenkins/s/http/sit.telemetria.eu:4063/ApiTest.svg?maxAge=2592000)](http://docs.test9510.apiary.io/#)|
+| **Unit Tests**|  [![Tests](https://img.shields.io/jenkins/t/http/sit.telemetria.eu:4063/UnitTest.svg)](http://sit.telemetria.eu:4063/job/UnitTest/HTML_Report/)|
 | **Tests Coverage**| [![Tests](https://img.shields.io/jenkins/c/http/sit.telemetria.eu:4063/UnitTest.svg)](http://sit.telemetria.eu:4063/job/UnitTest/lastBuild/cobertura/)|
 
 Próba instalacji serwera jenkins na Windows 10
