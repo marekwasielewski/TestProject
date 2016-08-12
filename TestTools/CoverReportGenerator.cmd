@@ -83,7 +83,7 @@ REM *** Change the filter to include/exclude parts of the solution you want to
 REM *** check for test coverage
 "%OpenCoverExe%"^
  -target:%TestRunnerExe% ^
- -targetargs:"/noisolation /testcontainer:\"%DllContainingTests%\"" ^
+ -targetargs:"/noisolation /testcontainer:\"%DllContainingTests%\" /resultsfile:\"%~dp0TestsResults.trx\"" ^
  -filter:"+[*]* -[*.Tests*]* -[*]*.Global -[*]*.RouteConfig -[*]*.WebApiConfig" ^
  -mergebyhash ^
  -skipautoprops ^
