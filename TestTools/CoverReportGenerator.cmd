@@ -9,11 +9,8 @@ REM  Allen Conway -
 REM   http://www.allenconway.net/2015/06/using-opencover-and-reportgenerator-to.html
 REM  Andrew Newton - 
 REM   http://www.nootn.com.au/2014/01/code-coverage-with-opencover-example.html#.VxiNn_krLDc  
-
-REM USAGE
-REM >CoverReportGenerator.cmd "D:\TestProjectGitHub\TestProject\test9510 API\test9510APITests\bin\Debug\test9510APITests.dll" 
-REM >CoverReportGenerator.cmd "D:\TestProjectGitHub\TestProject\test9510 API\test9510APITests\bin\Debug\test9510APITests.dll" 0 - don`t open report
-            
+                
+                
 SET DllContainingTests=%~1
 REM Second parameter is user see:https://github.com/OpenCover/opencover/issues/167
 REM 'user' for desktop 'administrator' for CI
@@ -83,7 +80,7 @@ REM *** Change the filter to include/exclude parts of the solution you want to
 REM *** check for test coverage
 "%OpenCoverExe%"^
  -target:%TestRunnerExe% ^
- -targetargs:"/noisolation /testcontainer:\"%DllContainingTests%\" /resultsfile:\"%~dp0TestsResults.trx\"" ^
+ -targetargs:"/noisolation /testcontainer:\"%DllContainingTests%\" /resultsfile:\"%~dp0TestResults\TestsResults.trx\"" ^
  -filter:"+[*]* -[*.Tests*]* -[*]*.Global -[*]*.RouteConfig -[*]*.WebApiConfig" ^
  -mergebyhash ^
  -skipautoprops ^
