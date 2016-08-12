@@ -30,6 +30,17 @@ namespace test9510API.Tests
         }
 
         [TestMethod()]
+        public void GetAMachineNull()
+        {
+            //var service = new Service1();
+            //var machine = service.GetAMachine("UNKOWNNAME");
+            //if (machine== null)
+            //    Assert.IsTrue(true);
+            //else
+                Assert.IsTrue(false);
+        }
+
+        [TestMethod()]
         public void GetAllMachines()
         {
             var service = new Service1();
