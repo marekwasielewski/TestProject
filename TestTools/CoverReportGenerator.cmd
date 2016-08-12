@@ -56,7 +56,7 @@ IF NOT EXIST "%ReportGeneratorExe%" (
   ECHO ReportGenerator.exe file is missing.Restore solution packages and check if ReportGenerator is installed 
   EXIT /B 3
 )     
-ECHO on
+ECHO off
     
 REM Create a 'GeneratedReports' folder if it does not exist
 if not exist "%~dp0GeneratedReports" mkdir "%~dp0GeneratedReports"
