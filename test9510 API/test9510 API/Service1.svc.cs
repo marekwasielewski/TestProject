@@ -62,5 +62,10 @@ namespace test9510API
             else
                 return null;
         }
+
+        private string GenerateName()
+        {
+            return Guid.NewGuid().ToString() + "blblb";
+        }
     }
 }

@@ -15,8 +15,11 @@ REM >CoverReportGenerator.cmd "D:\TestProjectGitHub\TestProject\test9510 API\tes
 REM >CoverReportGenerator.cmd "D:\TestProjectGitHub\TestProject\test9510 API\test9510APITests\bin\Debug\test9510APITests.dll" 0 - don`t open report
             
 SET DllContainingTests=%~1
+REM Second parameter is user see:https://github.com/OpenCover/opencover/issues/167
+REM 'user' for desktop 'administrator' for CI
+SET registerUser=%~2
 SET RunReport=1
-if %2==0 SET RunReport=0 
+if %3==0 SET RunReport=0 
 
 REM *** IMPORTANT - Change DllContainingTests variable (above) to point to the DLL 
 REM ***             in your solution containing your NUnit tests
@@ -30,7 +33,7 @@ REM *** Before being able to use this to generate coverage reports you will
 REM *** need the following NuGet packages
 REM PM> Install-Package OpenCover
 REM PM> Install-Package ReportGenerator
-REM
+
 
 REM *** MSTest Test Runner (VS2013, will need to change 12.0 to 14.0 for VS2015)
 SET TestRunnerExe="%PROGRAMFILES(X86)%\Microsoft Visual Studio 14.0\Common7\IDE\MSTest.exe"
@@ -56,7 +59,8 @@ IF NOT EXIST "%ReportGeneratorExe%" (
   ECHO ReportGenerator.exe file is missing.Restore solution packages and check if ReportGenerator is installed 
   EXIT /B 3
 )     
-       
+ECHO on
+    
 REM Create a 'GeneratedReports' folder if it does not exist
 if not exist "%~dp0GeneratedReports" mkdir "%~dp0GeneratedReports"
                
@@ -83,7 +87,7 @@ REM *** check for test coverage
  -filter:"+[*]* -[*.Tests*]* -[*]*.Global -[*]*.RouteConfig -[*]*.WebApiConfig" ^
  -mergebyhash ^
  -skipautoprops ^
- -register:user ^
+ -register:%registerUser% ^
  -output:"%~dp0GeneratedReports\CoverageReport.xml"
 exit /b %errorlevel%
 
