@@ -60,6 +60,9 @@ ECHO on
     
 REM Create a 'GeneratedReports' folder if it does not exist
 if not exist "%~dp0GeneratedReports" mkdir "%~dp0GeneratedReports"
+
+REM Create a 'TestResults' folder if it does not exist
+if not exist "%~dp0TestResults" mkdir "%~dp0TestResults"
                
 REM Run the tests against the targeted output
 CALL :RunOpenCoverUnitTestMetrics
