@@ -23,21 +23,15 @@ namespace test9510API.Tests
         {
             var service = new Service1();
             var machine = service.GetAMachine("willy");
-            if(machine.type == "bulldozer" && machine.name == "willy" && machine._id == "5229c6e8e4b0bd7dbb07e29c")
-                Assert.IsTrue(true);
-            else
-                Assert.IsTrue(false);
+            Assert.IsTrue(machine.type == "bulldozer" && machine.name == "willy" && machine._id == "5229c6e8e4b0bd7dbb07e29c");
         }
 
         [TestMethod()]
         public void GetAMachineNull()
         {
-            //var service = new Service1();
-            //var machine = service.GetAMachine("UNKOWNNAME");
-            //if (machine== null)
-            //    Assert.IsTrue(true);
-            //else
-                Assert.IsTrue(false);
+            var service = new Service1();
+            var machine = service.GetAMachine("UNKOWNNAME");
+            Assert.IsTrue(machine == null);
         }
 
         [TestMethod()]
@@ -45,13 +39,10 @@ namespace test9510API.Tests
         {
             var service = new Service1();
             var machines = service.GetAllMachines();
-            if (machines.Count() == 1
+            Assert.IsTrue(machines.Count() == 1
                 && machines.First().type == "bulldozer"
                 && machines.First().name == "willy"
-                && machines.First()._id == "52341870ed55224b15ff07ef")
-                Assert.IsTrue(true);
-            else
-                Assert.IsTrue(false);
+                && machines.First()._id == "52341870ed55224b15ff07ef");
         }
 
 

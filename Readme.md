@@ -1,7 +1,7 @@
 |Operation|Status|
 | --- | --- |
-| **Build** | [![Build status](https://img.shields.io/jenkins/s/http/sit.telemetria.eu:4063/BuildTask.svg?maxAge=2592000)](http://10.20.0.6:4063/job/BuildTask/lastBuild/) |
-| **API Tests**|  [![Tests](https://img.shields.io/jenkins/s/http/sit.telemetria.eu:4063/ApiTest.svg?maxAge=2592000)](http://docs.test9510.apiary.io)|
+| **Build** | [![Build status](https://img.shields.io/jenkins/s/http/sit.telemetria.eu:4063/BuildTask.svg?maxAge=1)](http://10.20.0.6:4063/job/BuildTask/lastBuild/) |
+| **API Tests**|  [![Tests](https://img.shields.io/jenkins/s/http/sit.telemetria.eu:4063/ApiTest.svg?maxAge=1)](http://docs.test9510.apiary.io)|
 | **Unit Tests**|  [![Tests](https://img.shields.io/jenkins/t/http/sit.telemetria.eu:4063/UnitTest.svg)](http://10.20.0.6:4063/job/UnitTest/HTML_Report/)|
 | **Tests Coverage**| [![Tests](https://img.shields.io/jenkins/c/http/sit.telemetria.eu:4063/UnitTest.svg)](http://10.20.0.6:4063/job/UnitTest/lastBuild/cobertura/)|
 
