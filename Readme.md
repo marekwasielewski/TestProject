@@ -3,7 +3,7 @@
 | **Build** | ![Build status](http://sit.telemetria.eu:4063/job/ApiTestProject/job/BuildTask/badge/icon) |
 | **API Tests**|  ![Tests](http://sit.telemetria.eu:4063/job/ApiTestProject/job/APITest/badge/icon)|
 | **Unit Tests**|  ![Tests](http://sit.telemetria.eu:4062/jenkins/d/http/127.0.0.1:8080/job/ApiTestProject/job/UnitTest)|
-| **Tests Coverage| [![Tests](http://sit.telemetria.eu:4062/jenkins/d/http/127.0.0.1:8080/job/ApiTestProject/job/UnitTest)](http://10.20.0.6:4063/job/UnitTest/HTML_Report/)|
+| **Tests Coverage**| [![Tests](http://sit.telemetria.eu:4062/jenkins/d/http/127.0.0.1:8080/job/ApiTestProject/job/UnitTest)](http://sit.telemetria.eu:4063/job/UnitTest/HTML_Report/)|
 
 Próba instalacji serwera jenkins na Windows 10
 Źródła:
